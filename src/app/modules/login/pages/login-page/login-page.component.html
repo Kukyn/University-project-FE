@@ -1,0 +1,14 @@
+<form nz-form [formGroup]="form" class="login-form" (ngSubmit)="submitForm()">
+  <nz-form-item nzErrorTip="Username is required">
+    <nz-input-group nzPrefixIcon="user">
+      <input type="text" nz-input formControlName="userName" placeholder="Email" />
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item nzErrorTip="Password is required">
+    <nz-input-group nzPrefixIcon="lock">
+      <input type="password" nz-input formControlName="password" placeholder="Heslo" />
+    </nz-input-group>
+  </nz-form-item>
+  <button nz-button class="login-form-button" nzType="primary">Přihlásit se</button>
+  <button nz-button class="login-form-button" nzType="link" (click)="register()">Registrace</button>
+</form>

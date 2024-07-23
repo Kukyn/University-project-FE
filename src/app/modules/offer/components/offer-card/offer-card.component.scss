@@ -1,0 +1,47 @@
+:host{
+  width: 100%;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  background: var(--white-light);
+  display: flex;
+  padding: 24px;
+}
+.card-left{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 16px 8px;
+}
+.card-title, .card-price{
+  font-weight: 700;
+  color: var(--brand-800);
+}
+.card-subtitle{
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--brand-800);
+}
+.card-right{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 24px;
+  border-left: solid var(--white-darker);
+  justify-content: center;
+  align-items: center;
+
+  button{
+    width: 120px;
+  }
+}
+.card-content{
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+}

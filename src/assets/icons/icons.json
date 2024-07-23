@@ -1,0 +1,84 @@
+{
+  "iconImageFiles": [
+    {
+      "iconName": "calendar",
+      "iconPath": "/assets/icons/calendar.svg"
+    },
+    {
+      "iconName": "car",
+      "iconPath": "/assets/icons/car.svg"
+    },
+    {
+      "iconName": "clock",
+      "iconPath": "/assets/icons/clock.svg"
+    },
+    {
+      "iconName": "destination-flag",
+      "iconPath": "/assets/icons/destination-flag.svg"
+    },
+    {
+      "iconName": "dollar-coin",
+      "iconPath": "/assets/icons/dollar-coin.svg"
+    },
+    {
+      "iconName": "email",
+      "iconPath": "/assets/icons/email.svg"
+    },
+    {
+      "iconName": "info-circle",
+      "iconPath": "/assets/icons/info-circle.svg"
+    },
+    {
+      "iconName": "location-compass",
+      "iconPath": "/assets/icons/location-compass.svg"
+    },
+    {
+      "iconName": "location-pin",
+      "iconPath": "/assets/icons/location-pin.svg"
+    },
+    {
+      "iconName": "navigation-arrow",
+      "iconPath": "/assets/icons/navigation-arrow.svg"
+    },
+    {
+      "iconName": "pencil",
+      "iconPath": "/assets/icons/pencil.svg"
+    },
+    {
+      "iconName": "phone",
+      "iconPath": "/assets/icons/phone.svg"
+    },
+    {
+      "iconName": "road",
+      "iconPath": "/assets/icons/road.svg"
+    },
+    {
+      "iconName": "user",
+      "iconPath": "/assets/icons/user.svg"
+    },
+    {
+      "iconName": "user-add",
+      "iconPath": "/assets/icons/user-add.svg"
+    },
+    {
+      "iconName": "user-group",
+      "iconPath": "/assets/icons/user-group.svg"
+    },
+    {
+      "iconName": "user-group-circle",
+      "iconPath": "/assets/icons/user-group-circle.svg"
+    },
+    {
+      "iconName": "user-id",
+      "iconPath": "/assets/icons/user-id.svg"
+    },
+    {
+      "iconName": "warning-octagon",
+      "iconPath": "/assets/icons/warning-octagon.svg"
+    },
+    {
+      "iconName": "warning-triangle",
+      "iconPath": "/assets/icons/warning-triangle.svg"
+    }
+  ]
+}

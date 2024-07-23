@@ -1,0 +1,20 @@
+<ng-container *ngIf="(user$ | async) as user">
+  <nz-page-header nzTitle="Detail uživatele" nzBackIcon="" (nzBack)="goBack()">
+    <nz-page-header-extra style="align-self: center">
+      <button *ngIf="canActiveUserWriteUser$ | async" nz-button nzType="primary" (click)="goToEdit()">Upravit</button>
+    </nz-page-header-extra>
+    <nz-page-header-content style=" padding: 16px">
+      <sf-spacer [gapSize]="32">
+        <sf-spacer direction="column" align="start">
+          <sf-spacer align="center">
+            <sf-text weight="bold" [fontSize]="32">{{user.fullName}}</sf-text>
+          </sf-spacer>
+          <sf-text icon="email">{{user.email}}</sf-text>
+          <sf-text icon="phone">{{user.phone_number}}</sf-text>
+          <sf-text icon="user-add">{{user.created_at | date: 'dd.MM.yyyy'}}</sf-text>
+        </sf-spacer>
+      </sf-spacer>
+    </nz-page-header-content>
+  </nz-page-header>
+</ng-container>
+

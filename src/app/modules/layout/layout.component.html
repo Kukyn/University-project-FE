@@ -1,0 +1,10 @@
+<div class="div">
+  <sf-text color="white-dark" [fontSize]="32" style="font-weight: bolder">SHAREFARE</sf-text>
+  <div style="display: flex">
+    <a routerLink="/user"><sf-icon icon="user" [size]="32" color="white-dark"></sf-icon></a>
+    <button nz-button nzType="text" (click)="logOut()" style="color: var(--white-dark)">Odhlásit se</button>
+  </div>
+</div>
+<div class="div3">
+  <router-outlet></router-outlet>
+</div>

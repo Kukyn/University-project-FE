@@ -1,0 +1,34 @@
+<form nz-form [formGroup]="form" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-input-group>
+      <label for="from">Od:</label>
+      <input type="text" class="form-control" id="from" formControlName="from">
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="to">Do:</label>
+      <input type="text" class="form-control" id="to" formControlName="to">
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="price">Cena:</label>
+      <input type="number" class="form-control" id="price" formControlName="price" required>
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="passengers">Cestující:</label>
+      <input type="number" class="form-control" id="passengers" formControlName="passengers" required>
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="maxPassengers">Max cestujících:</label>
+      <input type="number" class="form-control" id="maxPassengers" formControlName="maxPassengers" required>
+    </nz-input-group>
+  </nz-form-item>
+
+  <button nz-button class="login-form-button" nzType="primary">Upravit</button>
+</form>

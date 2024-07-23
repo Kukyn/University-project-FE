@@ -1,0 +1,34 @@
+<form nz-form [formGroup]="form" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-input-group>
+      <label for="firstName">Jméno:</label>
+      <input type="text" class="form-control" id="firstName" formControlName="firstName" required>
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="lastName">Příjmení:</label>
+      <input type="text" class="form-control" id="lastName" formControlName="lastName" required>
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="phoneNumber">Číslo:</label>
+      <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber" required>
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" formControlName="email" required>
+    </nz-input-group>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-input-group>
+      <label for="password">Heslo:</label>
+      <input type="password" class="form-control" id="password" formControlName="password" required>
+    </nz-input-group>
+  </nz-form-item>
+
+  <button nz-button class="login-form-button" nzType="primary">Registrovat</button>
+</form>

@@ -1,0 +1,13 @@
+<div *ngIf="offer" class="card-left">
+  <sf-text class="card-title" [fontSize]='32'>{{offer.route}}</sf-text>
+  <div class="card-content">
+    <sf-text class="card-subtitle" icon="car">{{offer.car.carName}}</sf-text>
+    <sf-text class="card-subtitle" icon="clock">{{offer.time | date: 'dd.MM.yyyy hh:mm'}}</sf-text>
+    <sf-text class="card-text" icon="user-group">{{offer.passengersCapacity}}</sf-text>
+  </div>
+</div>
+<div class="card-right">
+  <sf-text class="card-price" [fontSize]="32">{{offer.price + ' Kč'}}</sf-text>
+  <button nz-button nzType="primary" nzSize="large" (click)="goToOfferDetail()" >Detail</button>
+</div>
+

@@ -1,0 +1,4 @@
+<sf-spacer align="center">
+  <sf-icon *ngIf="icon" [icon]="icon" [size]="iconSize"></sf-icon>
+  <p [style.font-size.px]="fontSize" [style.font-weight]="weight" [style.text-align]="textAlign" [style.max-width.em]="maxWidth" [style.color]="'var(--' + color + ')'"><ng-content></ng-content></p>
+</sf-spacer>

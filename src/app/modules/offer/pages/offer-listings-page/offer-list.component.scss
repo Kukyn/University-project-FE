@@ -1,0 +1,11 @@
+:host{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+sf-offer-card{
+  width: 70%;
+}

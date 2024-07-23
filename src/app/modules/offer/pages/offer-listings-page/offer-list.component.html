@@ -1,0 +1,7 @@
+<ng-container *ngIf="offers$ | async; let offers;else noDataTpl">
+  <sf-offer-card *ngFor="let offer of offers" [offer]="offer"></sf-offer-card>
+</ng-container>
+
+<ng-template #noDataTpl>
+  <p>No data</p>
+</ng-template>

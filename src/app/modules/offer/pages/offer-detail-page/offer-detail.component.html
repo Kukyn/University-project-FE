@@ -1,0 +1,37 @@
+<ng-container *ngIf="offer$ | async; let offer">
+  <nz-page-header nzTitle="Detail jízdy" nzBackIcon="" (nzBack)="goBack()">
+    <nz-page-header-extra style="align-self: center">
+      <button *ngIf="canActiveUserEditOffer$ | async" nz-button nzType="primary" (click)="goToEdit()">Upravit</button>
+    </nz-page-header-extra>
+  </nz-page-header>
+  <div class="detail offer-detail">
+    <div class="detail-header">
+      <sf-text [fontSize]="24" weight="bolder">cesta</sf-text>
+    </div>
+    <div class="offer-detail-text">
+      <div class="detail-text offer-detail-text-left">
+        <sf-text icon="destination-flag">{{offer.route}}</sf-text>
+        <sf-text icon="clock">{{offer.time | date: 'dd.MM.yyyy hh:mm'}}</sf-text>
+        <sf-text icon="dollar-coin">{{offer.price + "Kč"}}</sf-text>
+        <sf-text icon="user-group">{{offer.passengersCapacity}}</sf-text>
+      </div>
+
+      <div class="detail-text offer-detail-text-right">
+        <sf-text icon="car">{{offer.car.carName}}</sf-text>
+        <sf-text icon="car">{{offer.car.type}}</sf-text>
+        <sf-text icon="car">{{offer.car.color}}</sf-text>
+        <sf-text icon="car">{{offer.car.spz}}</sf-text>
+      </div>
+    </div>
+  </div>
+  <div class="detail driver-detail">
+    <div class="detail-header">
+      <sf-text [fontSize]="24" weight="bolder">řidič</sf-text>
+    </div>
+    <div class="detail-text driver-detail-text">
+      <sf-text icon="user">{{offer.created_by.fullName}}</sf-text>
+      <sf-text icon="email">{{offer.created_by.email}}</sf-text>
+      <sf-text icon="phone">{{offer.created_by.phone_number}}</sf-text>
+    </div>
+  </div>
+</ng-container>
